@@ -1,0 +1,13 @@
+body {
+    font-family:"Abel";
+    background-color: #E3BD49;
+    color:#6B80E3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Gemunu Libre";
+    font-size:40pt;
+}
+header {text-align: center;}
+body {text-align: center;}
+#hero img {width: 300px;}
