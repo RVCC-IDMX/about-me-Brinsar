@@ -19,6 +19,9 @@ body {text-align: left;}
   ul li {
     background: #c1d1e2;
     margin: 5px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
   }
 
   /* Gallery */ 
@@ -43,8 +46,50 @@ text-align: center;
   margin-bottom: 2rem;
 }
 
-#lit div {
+#lit div p:first-child::first-letter{
   padding:2rem;
   max-width: 40rem;
   margin:0 auto;
+}
+@media screen and (min-width: 60cm) {
+figure {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* tablet size */
+
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  figure img {width: 100x}
+  #lit div {
+    max-width: 100x;
+    columns: 20rem;
+  }
+}
+
+/* large screen size */
+
+@media screen and (min-width: 100cm) {
+
+  #gallery {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  hr {
+    display: none;
+  }
+
+  #gallery h2 {
+    grid-column: 1/-1;
+  }
+  figure {
+    display: block;
+  }
 }
