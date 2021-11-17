@@ -16,7 +16,7 @@ body {text-align: left;}
 
   /* Hobbies */
 
-  ul li {
+ #hobbies ul li {
     background: #c1d1e2;
     margin: 5px;
     display: flex; 
