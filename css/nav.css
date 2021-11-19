@@ -30,6 +30,7 @@ main {
     flex-direction: column;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 
@@ -66,12 +67,21 @@ main {
 
 .navbar-links a {
     color:antiquewhite;
-    background-attachment: #4169E1;
+    background-color: #4169E1;
     font-size: 1.5rem;
     padding: 1rem 1.25rem;
     letter-spacing: 2px;
     text-decoration: none;
     display: inline-block;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+    color: #4169E1;
+    background-color: antiquewhite;
+    filter: invert(1);
+    border-radius: 10px;
+    outline: none;
 }
 
 
@@ -81,3 +91,19 @@ media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps 
 */
+
+@media screen and (min-width: 60rem) {
+
+    /* .navbar-links {
+        display: flex;
+        justify-content: space-between;
+    } */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
