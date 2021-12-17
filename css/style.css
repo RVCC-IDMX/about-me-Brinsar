@@ -25,7 +25,8 @@ body {text-align: left;}
   }
 
   /* Gallery */ 
-  #gallery { 
+  
+  #gallery {
     border: 2px solid #6B80E3;
     margin-bottom: 2rem;
   }
